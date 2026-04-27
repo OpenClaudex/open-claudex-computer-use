@@ -1,6 +1,8 @@
 # Open Claudex Computer Use
 
-Open-source background computer use for Claude Code, Codex-style agents, and any MCP client on macOS.
+**English | [简体中文](README.zh-CN.md)**
+
+Open-source background computer use for Claude Code, Codex, and MCP agents on macOS.
 
 [![Release](https://img.shields.io/github/v/release/OpenClaudex/open-claudex-computer-use?include_prereleases&label=release)](https://github.com/OpenClaudex/open-claudex-computer-use/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -8,13 +10,15 @@ Open-source background computer use for Claude Code, Codex-style agents, and any
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)](Package.swift)
 [![MCP](https://img.shields.io/badge/MCP-stdio-blue)](docs/install.md)
 
+![Open Claudex Computer Use demo](docs/assets/openclaudex-demo.gif)
+
 `claudex-computer-use` is a native Swift MCP server that lets AI agents inspect and operate real Mac apps through Accessibility, ScreenCaptureKit, and CGEvent fallbacks.
 
 It is built for the gap between browser automation and full virtual machines:
 
 - Works with real desktop apps, not just webpages.
 - Runs locally on your Mac, with no cloud desktop required.
-- Supports Claude Code, Codex-style workflows, Cursor, and generic MCP clients.
+- Supports Claude Code, Codex App plugin workflows, Codex CLI-style MCP setups, Cursor, and generic MCP clients.
 - Keeps a live virtual cursor overlay for demos, observation, and trust.
 - Returns Codex-style post-action state so agents can keep acting without excessive re-snapshotting.
 
@@ -22,9 +26,18 @@ It is built for the gap between browser automation and full virtual machines:
 
 > Not affiliated with Anthropic, OpenAI, Apple, or the official Codex Computer Use plugin.
 
+## Origin
+
+This project started as an experiment around two converging workflows:
+
+- Codex-style background computer use, where an agent can inspect and operate Mac apps without stealing your real mouse.
+- Claude Code-style extensibility, where external capabilities are exposed as MCP tools.
+
+The missing piece was a reusable open-source execution layer: a local macOS MCP server that any agent harness can plug into. Open Claudex Computer Use is that layer.
+
 ## Why
 
-Most computer-use projects are either browser-first, VM-first, or harness-first. Open Claudex Computer Use is app-first:
+Most computer-use projects are browser-first, VM-first, or harness-first. Open Claudex Computer Use is app-first:
 
 | Approach | Best For | Tradeoff |
 |---|---|---|
@@ -40,13 +53,6 @@ The goal is not to hide the platform boundary. The goal is to expose it cleanly 
 git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
 cd open-claudex-computer-use
 swift build
-```
-
-Add it to Claude Code:
-
-```bash
-claude mcp add claudex-computer-use -- "$(pwd)/.build/debug/claudex-computer-use"
-claude mcp list
 ```
 
 Run smoke tests:
@@ -66,32 +72,55 @@ Requires:
 
 Full setup: [docs/install.md](docs/install.md)
 
-## Install For MCP Clients
+## Install For Claude Code
 
-### Claude Code
-
-```bash
-claude mcp add claudex-computer-use -- /absolute/path/to/.build/debug/claudex-computer-use
-```
-
-Then restart Claude Code and verify:
+Claude Code can run local stdio MCP servers.
 
 ```bash
+git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
+cd open-claudex-computer-use
+swift build
+
+claude mcp add claudex-computer-use -- "$(pwd)/.build/debug/claudex-computer-use"
 claude mcp list
 ```
 
-### Codex Plugin
+Then restart Claude Code.
 
-This repo includes a local plugin scaffold:
+Grant Accessibility and Screen Recording permissions to the terminal app that runs Claude Code, such as Terminal.app, iTerm2, or Warp.
+
+## Install For Codex App
+
+This repo includes a local Codex plugin scaffold:
 
 ```text
 plugins/claudex-computer-use/.codex-plugin/plugin.json
 plugins/claudex-computer-use/.mcp.json
 ```
 
-Build first with `swift build`, then point Codex at the plugin directory.
+Build first:
 
-### Cursor / Generic MCP
+```bash
+swift build
+```
+
+Then add the local plugin directory to Codex:
+
+```text
+/path/to/open-claudex-computer-use/plugins/claudex-computer-use
+```
+
+The plugin starts:
+
+```text
+.build/debug/claudex-computer-use
+```
+
+Grant Accessibility and Screen Recording permissions to Codex if Codex is the host process.
+
+## Install For Codex CLI / Generic MCP
+
+Use the server as a normal stdio MCP command:
 
 ```json
 {
@@ -103,7 +132,7 @@ Build first with `swift build`, then point Codex at the plugin directory.
 }
 ```
 
-The server supports both MCP stdio formats:
+The server auto-detects both MCP stdio formats:
 
 - NDJSON, used by newer Claude Code / MCP SDK clients
 - `Content-Length`, used by older clients and Codex-style transports

@@ -10,7 +10,7 @@
 ## Build from Source
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
 cd open-claudex-computer-use
 swift build
 ```
@@ -80,7 +80,7 @@ claude mcp list
 
 This writes to your Claude Code MCP config. After adding, restart Claude Code.
 
-### Codex (Plugin)
+### Codex App (Plugin)
 
 The repo includes a Codex plugin scaffold:
 
@@ -91,8 +91,28 @@ plugins/claudex-computer-use/.mcp.json
 
 To use:
 1. Build the project (`swift build`)
-2. The plugin points at `.build/debug/claudex-computer-use`
-3. Install via the Codex plugin marketplace or manually point your Codex config at the plugin directory
+2. Add this local plugin directory to Codex:
+
+```
+/path/to/open-claudex-computer-use/plugins/claudex-computer-use
+```
+
+3. The plugin starts `.build/debug/claudex-computer-use`
+4. Grant Accessibility and Screen Recording permissions to Codex if Codex is the host process
+
+### Codex CLI / Generic MCP
+
+Use the server as a normal stdio MCP command:
+
+```json
+{
+  "mcpServers": {
+    "claudex-computer-use": {
+      "command": "/path/to/open-claudex-computer-use/.build/debug/claudex-computer-use"
+    }
+  }
+}
+```
 
 ### Cursor
 
