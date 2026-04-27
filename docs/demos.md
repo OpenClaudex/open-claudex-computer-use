@@ -4,6 +4,18 @@ Prompts and scripts for demonstrating Claudex Computer Use capabilities.
 
 For native Codex reverse-engineering prompts that are designed to expose rollout traces rather than showcase Claudex Computer Use, see [Codex Native Trace Kit](codex-native-trace-kit.md).
 
+## Public Demo GIFs
+
+The README uses three short, privacy-safe GIFs:
+
+| File | Scenario | Privacy Rule |
+|------|----------|--------------|
+| `docs/assets/demo-calculator.gif` | Native macOS Calculator control | Real system app, no personal data |
+| `docs/assets/demo-background-safari-notes.gif` | Background Safari + Notes workflow while the user keeps typing elsewhere | Synthetic public data only |
+| `docs/assets/demo-feishu-lark.gif` | Feishu/Lark best-effort enterprise app workflow | Sanitized test workspace with fake contacts and messages only |
+
+Do not publish raw Feishu/Lark recordings that contain real chats, contacts, company names, or document titles. If a real Feishu/Lark recording is needed, use a dedicated test workspace such as `OpenClaudex Demo` and verify sampled frames before committing the GIF.
+
 ## Hero Demo: Safari + Notes
 
 **What it shows**: End-to-end background automation across two native apps. Search the web, extract information, write it to Notes — all without touching the mouse or switching windows.

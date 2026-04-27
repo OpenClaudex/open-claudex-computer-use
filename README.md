@@ -10,8 +10,6 @@ Open-source background computer use for Claude Code, Codex, and MCP agents on ma
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)](Package.swift)
 [![MCP](https://img.shields.io/badge/MCP-stdio-blue)](docs/install.md)
 
-![Open Claudex Computer Use demo](docs/assets/openclaudex-demo.gif)
-
 `claudex-computer-use` is a native Swift MCP server that lets AI agents inspect and operate real Mac apps through Accessibility, ScreenCaptureKit, and CGEvent fallbacks.
 
 It is built for the gap between browser automation and full virtual machines:
@@ -25,6 +23,13 @@ It is built for the gap between browser automation and full virtual machines:
 **Status:** `0.1.0-alpha`
 
 > Not affiliated with Anthropic, OpenAI, Apple, or the official Codex Computer Use plugin.
+
+## Demos
+
+| Native App Control | Background Cross-App Work | Feishu / Lark Best-Effort |
+|---|---|---|
+| ![Native macOS Calculator demo](docs/assets/demo-calculator.gif) | ![Background Safari and Notes demo](docs/assets/demo-background-safari-notes.gif) | ![Sanitized Feishu and Lark demo](docs/assets/demo-feishu-lark.gif) |
+| Click and read native macOS apps through Accessibility, with a visible virtual cursor. | Let the agent work in Safari and Notes while you keep using the Mac. | Operate WebView-heavy enterprise apps with mixed AX and coordinate fallbacks. Sanitized demo data only. |
 
 ## Origin
 

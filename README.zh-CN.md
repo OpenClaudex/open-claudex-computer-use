@@ -10,8 +10,6 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)](Package.swift)
 [![MCP](https://img.shields.io/badge/MCP-stdio-blue)](docs/install.md)
 
-![Open Claudex Computer Use demo](docs/assets/openclaudex-demo.gif)
-
 `claudex-computer-use` 是一个原生 Swift MCP server。它把 macOS Accessibility、ScreenCaptureKit、CGEvent fallback 和虚拟光标封装成 MCP tools，让 AI agent 可以读取和操作真实 Mac App。
 
 它填的是 browser automation 和完整虚拟机之间的空位：
@@ -25,6 +23,13 @@
 **状态：** `0.1.0-alpha`
 
 > 本项目不是 Anthropic、OpenAI、Apple 或官方 Codex Computer Use 插件的官方项目。
+
+## Demos
+
+| 原生 App 操作 | 后台跨 App 工作流 | 飞书 / Lark Best-Effort |
+|---|---|---|
+| ![原生 macOS Calculator demo](docs/assets/demo-calculator.gif) | ![Safari 和 Notes 后台工作流 demo](docs/assets/demo-background-safari-notes.gif) | ![飞书和 Lark 安全演示 demo](docs/assets/demo-feishu-lark.gif) |
+| 通过 Accessibility 读取和点击原生 macOS App，并显示虚拟光标。 | agent 在 Safari 和 Notes 中工作，同时人可以继续使用电脑。 | 对 WebView-heavy 企业 App 使用 AX + 坐标 fallback。素材只包含假数据。 |
 
 ## 项目起源
 
