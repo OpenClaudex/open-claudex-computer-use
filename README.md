@@ -30,13 +30,6 @@
   <img alt="WeChat" src="https://img.shields.io/badge/WeChat-best--effort-07c160">
 </p>
 
-## 🧭 Quick Navigation
-
-> [!TIP]
-> **I'm a human** -> Continue reading this README for demos, setup, compatibility, and project context.
->
-> **I'm an agent** -> Read [CLAUDE.md](CLAUDE.md) for structured operating instructions, key files, and command quick reference.
-
 > [!IMPORTANT]
 > **🖥️ From GUI to Agent UI.** In December 1979, when Steve Jobs saw the GUI at Xerox PARC, it became obvious that computers needed a new interface. The first time I saw Codex Computer Use, I felt a smaller version of that: agents need their own lane to use real apps and coexist better with human UI work.
 >
@@ -45,6 +38,13 @@
 > **🔓 Why open source it?** The official Codex Computer Use MCP is not open source. Open Claudex is an open macOS execution layer for Claude Code, Codex, and other MCP harnesses.
 
 ![Open Claudex Computer Use architecture](docs/assets/openclaudex-architecture.png)
+
+## 🧭 Quick Navigation
+
+> [!TIP]
+> **I'm a human** -> Continue reading this README for demos, setup, compatibility, and project context.
+>
+> **I'm an agent** -> Read [CLAUDE.md](CLAUDE.md) for structured operating instructions, key files, and command quick reference.
 
 `claudex-computer-use` is a native Swift MCP server that lets AI agents inspect and operate real Mac apps without moving your real mouse or requiring a cloud desktop.
 
