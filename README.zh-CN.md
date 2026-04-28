@@ -31,9 +31,11 @@
 </p>
 
 > [!IMPORTANT]
-> **什么是后台 computer use？** 它不是云桌面，也不是抢你的真实鼠标，而是让 agent 在独立执行通道里读取和操作真实 Mac App。你可以继续使用电脑，agent 通过自己的 app-aware 虚拟光标、截图和 Accessibility context 工作。
+> **🖥️ 从 GUI 到 Agent UI。** 有个经典故事：乔布斯在 Xerox PARC 看到 GUI 后，意识到电脑需要一种新的交互界面。第一次使用 Codex Computer Use 时，我们也有类似的感觉：agent 也需要一种真正使用 App 的界面。
 >
-> **为什么要开源这一层？** 后台执行会改变 agent UI 的可用性边界：任务可以更慢、更稳、更可恢复，也可以和人的操作并行。Open Claudex 的目标是把这层 macOS execution layer 做成 Claude Code、Codex 和其他 MCP harness 都能复用的开源基础设施。
+> **🧭 后台 computer use。** agent 不应该为了完成任务而抢走人的鼠标。它应该在独立执行通道里操作真实 App，通过 app-aware 虚拟光标保持可见，并用截图 + Accessibility context 保持可恢复。
+>
+> **🔓 为什么开源。** 官方 Codex Computer Use MCP 没有开源。Open Claudex 要做的是一个可复用的 macOS execution layer，让 Claude Code、Codex 和其他 MCP harness 都能接入。
 
 ![Open Claudex Computer Use 架构图](docs/assets/openclaudex-architecture.png)
 

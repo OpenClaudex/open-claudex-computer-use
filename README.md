@@ -31,9 +31,11 @@
 </p>
 
 > [!IMPORTANT]
-> **What is background computer use?** It means an agent can inspect and operate real Mac apps in a separate execution lane while you keep using your Mac. Your real mouse stays yours; the agent works through its own app-aware virtual cursor, screenshots, and Accessibility context.
+> **🖥️ From GUI to Agent UI.** There is a classic origin story: when Steve Jobs saw the GUI at Xerox PARC, it became obvious that computers needed a new interface. The first time we used Codex Computer Use, we felt a smaller version of that: agents need their own way to use real apps.
 >
-> **Why open source this layer?** Background execution changes the UX tolerance of agent apps: tasks can run longer, recover more safely, and happen in parallel instead of blocking the user. Open Claudex exists to make this macOS execution layer reusable across Claude Code, Codex, and other MCP harnesses.
+> **🧭 Background computer use.** An agent should not have to steal your mouse to get work done. It should operate in a separate lane, stay visible through an app-aware virtual cursor, and keep enough screenshot + Accessibility context to recover.
+>
+> **🔓 Why open source it?** The official Codex Computer Use MCP is not open source. Open Claudex is an open macOS execution layer for Claude Code, Codex, and other MCP harnesses.
 
 ![Open Claudex Computer Use architecture](docs/assets/openclaudex-architecture.png)
 
