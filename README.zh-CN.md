@@ -40,7 +40,7 @@
 > [!IMPORTANT]
 > **🖥️ 从 GUI 到 Agent UI。** 1979 年 12 月，乔布斯在 Xerox PARC 看到 GUI 后，意识到电脑需要一种新的交互界面。第一次看到 Codex Computer Use 时，我也有一个小一号的类似感受：agent 需要自己的“车道”去使用真实 App，才能和人类的 UI 操作更好共生。
 >
-> **🧭 后台 computer use。** agent 不应该为了完成任务而抢走人的鼠标。它应该在独立执行通道里操作真实 App，通过 app-aware 虚拟光标保持可见，并用截图 + Accessibility context 保持可恢复。
+> **🧭 后台 computer use。** agent 不应该为了完成任务而抢走人的鼠标和键盘。它应该在独立执行通道里操作真实 App，通过 app-aware 虚拟光标保持可见，并用截图 + Accessibility context 保持可恢复。
 >
 > **🔓 为什么开源。** 官方 Codex Computer Use MCP 没有开源。Open Claudex 要做的是一个可复用的 macOS execution layer，让 Claude Code、Codex 和其他 MCP harness 都能接入。
 

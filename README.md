@@ -40,7 +40,7 @@
 > [!IMPORTANT]
 > **🖥️ From GUI to Agent UI.** In December 1979, when Steve Jobs saw the GUI at Xerox PARC, it became obvious that computers needed a new interface. The first time I saw Codex Computer Use, I felt a smaller version of that: agents need their own lane to use real apps and coexist better with human UI work.
 >
-> **🧭 Background computer use.** An agent should not have to steal your mouse to get work done. It should operate in a separate lane, stay visible through an app-aware virtual cursor, and keep enough screenshot + Accessibility context to recover.
+> **🧭 Background computer use.** An agent should not have to steal your mouse and keyboard to get work done. It should operate in a separate lane, stay visible through an app-aware virtual cursor, and keep enough screenshot + Accessibility context to recover.
 >
 > **🔓 Why open source it?** The official Codex Computer Use MCP is not open source. Open Claudex is an open macOS execution layer for Claude Code, Codex, and other MCP harnesses.
 
