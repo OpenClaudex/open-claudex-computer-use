@@ -200,7 +200,7 @@ Purpose: expose browser text-entry strategy and submission behavior.
 Using only computer-use, do these three steps in 企业微信:
 1. open search
 2. type:
-Worker Lee
+Test User
 3. stop on the result list
 Do not send a message and do not open any conversation.
 If this fails, report step by step whether the failure happened while opening search, delivering text input, or refreshing the result list.

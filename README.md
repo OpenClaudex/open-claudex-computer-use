@@ -12,6 +12,11 @@ Open-source background computer use for Claude Code, Codex, and MCP agents on ma
 
 ![Open Claudex Computer Use architecture](docs/assets/openclaudex-architecture.png)
 
+## Quick Navigation
+
+- **I'm a human** -> Continue reading this README for demos, setup, compatibility, and project context.
+- **I'm an agent** -> Read [CLAUDE.md](CLAUDE.md) for structured operating instructions, key files, and command quick reference.
+
 `claudex-computer-use` is a native Swift MCP server that lets AI agents inspect and operate real Mac apps without moving your real mouse or requiring a cloud desktop.
 
 - **For Claude Code and Codex**: local stdio MCP server plus a Codex plugin scaffold.
@@ -103,6 +108,14 @@ Open Claudex is not a full agent harness. It is the execution engine.
 - [Testing](docs/testing.md)
 - [Codex Native Trace Kit](docs/codex-native-trace-kit.md)
 - [Roadmap](ROADMAP.md)
+
+## Related Projects
+
+Open Claudex focuses on the native macOS execution layer. Related projects around computer use and agent desktops:
+
+- [iFurySt/open-codex-computer-use](https://github.com/iFurySt/open-codex-computer-use) - open-source Codex-style computer-use MCP server.
+- [trycua/cua](https://github.com/trycua/cua) - sandbox, SDK, and infrastructure for full desktop computer-use agents.
+- [browser-use/macOS-use](https://github.com/browser-use/macOS-use) - making macOS apps accessible to AI agents.
 
 ## License
 
