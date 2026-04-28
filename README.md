@@ -14,8 +14,10 @@ Open-source background computer use for Claude Code, Codex, and MCP agents on ma
 
 ## Quick Navigation
 
-- **I'm a human** -> Continue reading this README for demos, setup, compatibility, and project context.
-- **I'm an agent** -> Read [CLAUDE.md](CLAUDE.md) for structured operating instructions, key files, and command quick reference.
+> [!TIP]
+> **I'm a human** -> Continue reading this README for demos, setup, compatibility, and project context.
+>
+> **I'm an agent** -> Read [CLAUDE.md](CLAUDE.md) for structured operating instructions, key files, and command quick reference.
 
 `claudex-computer-use` is a native Swift MCP server that lets AI agents inspect and operate real Mac apps without moving your real mouse or requiring a cloud desktop.
 
@@ -116,6 +118,16 @@ Open Claudex focuses on the native macOS execution layer. Related projects aroun
 - [iFurySt/open-codex-computer-use](https://github.com/iFurySt/open-codex-computer-use) - open-source Codex-style computer-use MCP server.
 - [trycua/cua](https://github.com/trycua/cua) - sandbox, SDK, and infrastructure for full desktop computer-use agents.
 - [browser-use/macOS-use](https://github.com/browser-use/macOS-use) - making macOS apps accessible to AI agents.
+
+## Star History
+
+<a href="https://star-history.com/#OpenClaudex/open-claudex-computer-use&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=OpenClaudex/open-claudex-computer-use&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=OpenClaudex/open-claudex-computer-use&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=OpenClaudex/open-claudex-computer-use&type=Date" />
+  </picture>
+</a>
 
 ## License
 

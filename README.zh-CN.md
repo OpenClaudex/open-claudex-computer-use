@@ -14,8 +14,10 @@
 
 ## 快速导航
 
-- **我是人类** -> 继续阅读本文档：看 demo、安装方式、兼容性和项目背景。
-- **我是 Agent** -> 请看 [CLAUDE.md](CLAUDE.md)：结构化操作指南、关键文件和命令速查。
+> [!TIP]
+> **我是人类** -> 继续阅读本文档：看 demo、安装方式、兼容性和项目背景。
+>
+> **我是 Agent** -> 请看 [CLAUDE.md](CLAUDE.md)：结构化操作指南、关键文件和命令速查。
 
 `claudex-computer-use` 是一个原生 Swift MCP server，让 AI agent 能读取和操作真实 Mac App，同时不移动你的真实鼠标，也不需要云端虚拟桌面。
 
@@ -116,6 +118,16 @@ Open Claudex 聚焦原生 macOS 执行层。下面是 computer use 和 agent des
 - [iFurySt/open-codex-computer-use](https://github.com/iFurySt/open-codex-computer-use) - Codex 风格的开源 computer-use MCP server。
 - [trycua/cua](https://github.com/trycua/cua) - 面向完整桌面 computer-use agent 的 sandbox、SDK 和基础设施。
 - [browser-use/macOS-use](https://github.com/browser-use/macOS-use) - 让 macOS App 对 AI agent 更可访问。
+
+## Star History
+
+<a href="https://star-history.com/#OpenClaudex/open-claudex-computer-use&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=OpenClaudex/open-claudex-computer-use&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=OpenClaudex/open-claudex-computer-use&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=OpenClaudex/open-claudex-computer-use&type=Date" />
+  </picture>
+</a>
 
 ## License
 
