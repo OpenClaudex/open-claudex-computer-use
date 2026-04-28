@@ -30,6 +30,11 @@
   <img alt="WeChat" src="https://img.shields.io/badge/WeChat-best--effort-07c160">
 </p>
 
+> [!IMPORTANT]
+> **什么是后台 computer use？** 它不是云桌面，也不是抢你的真实鼠标，而是让 agent 在独立执行通道里读取和操作真实 Mac App。你可以继续使用电脑，agent 通过自己的 app-aware 虚拟光标、截图和 Accessibility context 工作。
+>
+> **为什么要开源这一层？** 后台执行会改变 agent UI 的可用性边界：任务可以更慢、更稳、更可恢复，也可以和人的操作并行。Open Claudex 的目标是把这层 macOS execution layer 做成 Claude Code、Codex 和其他 MCP harness 都能复用的开源基础设施。
+
 ![Open Claudex Computer Use 架构图](docs/assets/openclaudex-architecture.png)
 
 ## 🧭 快速导航
