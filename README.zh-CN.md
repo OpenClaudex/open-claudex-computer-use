@@ -157,3 +157,14 @@ Open Claudex 聚焦原生 macOS 执行层。下面是 computer use 和 agent des
 ## 📄 License
 
 [MIT](LICENSE)
+
+---
+
+<p align="center">
+  如果这个项目对你有帮助，欢迎给一个 ⭐ Star!
+</p>
+
+<p align="center">
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/issues">Report Issues</a> ·
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/issues/new?labels=enhancement">Feature Requests</a>
+</p>

@@ -157,3 +157,14 @@ Open Claudex focuses on the native macOS execution layer. Related projects aroun
 ## 📄 License
 
 [MIT](LICENSE)
+
+---
+
+<p align="center">
+  If this project helps you, please give it a ⭐ Star!
+</p>
+
+<p align="center">
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/issues">Report Issues</a> ·
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/issues/new?labels=enhancement">Feature Requests</a>
+</p>
