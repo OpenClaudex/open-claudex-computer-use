@@ -1,18 +1,38 @@
-# Open Claudex Computer Use
+# 🚀 Open Claudex Computer Use
 
-**[English](README.md) | 简体中文**
+<p align="center">
+  <strong>面向 Claude Code、Codex 和任意 MCP agent 的 macOS 后台 computer-use 执行层。</strong>
+</p>
 
-面向 Claude Code、Codex 和任意 MCP agent 的开源 macOS 后台 computer-use MCP server。
+<p align="center">
+  • 开源 Codex 风格 Computer Use • 原生 Swift MCP Server • App-aware 虚拟光标 •
+</p>
 
-[![Release](https://img.shields.io/github/v/release/OpenClaudex/open-claudex-computer-use?include_prereleases&label=release)](https://github.com/OpenClaudex/open-claudex-computer-use/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![macOS](https://img.shields.io/badge/macOS-13%2B-black)](docs/install.md)
-[![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)](Package.swift)
-[![MCP](https://img.shields.io/badge/MCP-stdio-blue)](docs/install.md)
+<p align="center">
+  <a href="README.md">English</a> •
+  <a href="#-功能">功能</a> •
+  <a href="#-demos">Demo</a> •
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/releases">下载</a> •
+  <a href="#-快速开始">快速开始</a> •
+  <a href="#-兼容性">兼容性</a> •
+  <a href="CLAUDE.md">Agent Guide</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/releases"><img alt="Release" src="https://img.shields.io/github/v/release/OpenClaudex/open-claudex-computer-use?include_prereleases&label=release"></a>
+  <a href="docs/install.md"><img alt="Platform" src="https://img.shields.io/badge/platform-macOS%2013%2B-black"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-green"></a>
+  <a href="Package.swift"><img alt="Swift" src="https://img.shields.io/badge/Swift-5.9%2B-orange"></a>
+  <a href="docs/install.md"><img alt="MCP" src="https://img.shields.io/badge/MCP-stdio-blue"></a>
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-ready-6b46c1">
+  <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-111827">
+  <img alt="Feishu and Lark" src="https://img.shields.io/badge/Feishu%2FLark-best--effort-00a6ff">
+  <img alt="WeChat" src="https://img.shields.io/badge/WeChat-best--effort-07c160">
+</p>
 
 ![Open Claudex Computer Use 架构图](docs/assets/openclaudex-architecture.png)
 
-## 快速导航
+## 🧭 快速导航
 
 > [!TIP]
 > **我是人类** -> 继续阅读本文档：看 demo、安装方式、兼容性和项目背景。
@@ -29,14 +49,14 @@
 
 > 本项目不是 Anthropic、OpenAI、Apple 或官方 Codex Computer Use 插件的官方项目。
 
-## Demos
+## 🎬 Demos
 
 | 原生 App 操作 | 后台跨 App 工作流 | 飞书 / Lark Best-Effort |
 |---|---|---|
 | ![原生 macOS Calculator demo](docs/assets/demo-calculator.gif) | ![Safari 和 Notes 后台工作流 demo](docs/assets/demo-background-safari-notes.gif) | ![飞书和 Lark 安全演示 demo](docs/assets/demo-feishu-lark.gif) |
 | 通过 Accessibility 读取和点击原生 macOS App，并显示虚拟光标。 | agent 在 Safari 和 Notes 中工作，同时人可以继续使用电脑。 | 对 WebView-heavy 企业 App 使用 AX + 坐标 fallback。素材只包含假数据。 |
 
-## 快速开始
+## ⚡ 快速开始
 
 ```bash
 git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
@@ -73,7 +93,7 @@ plugins/claudex-computer-use
 
 要求 macOS 13+、Swift 5.9+、Accessibility 权限和 Screen Recording 权限。完整说明见：[安装和集成](docs/install.md)。
 
-## 能做什么
+## ✨ 功能
 
 Open Claudex 聚焦原生 macOS 执行层：
 
@@ -85,7 +105,7 @@ Open Claudex 聚焦原生 macOS 执行层：
 
 给 agent / 集成者看的调用规则、工具行为和错误恢复见：[Agent Guide](docs/agent-guide.md)。
 
-## 兼容性
+## 🧩 兼容性
 
 | 等级 | App | 预期表现 |
 |---|---|---|
@@ -95,13 +115,13 @@ Open Claudex 聚焦原生 macOS 执行层：
 
 详细矩阵：[App 兼容性矩阵](docs/compatibility.md)
 
-## 为什么做
+## 🧪 为什么做
 
 这个项目来自两个方向的实验：Codex 风格的 background computer use，以及 Claude Code 风格的 MCP 扩展。我们缺的是一个可以复用的开源执行层：一个本地 macOS MCP server，任何 agent harness 都可以接进来。
 
 Open Claudex 不是完整 agent harness，而是执行引擎。
 
-## 文档
+## 📚 文档
 
 - [安装和集成](docs/install.md)
 - [Agent Guide](docs/agent-guide.md)
@@ -111,7 +131,7 @@ Open Claudex 不是完整 agent harness，而是执行引擎。
 - [Codex Native Trace Kit](docs/codex-native-trace-kit.md)
 - [Roadmap](ROADMAP.md)
 
-## 相关项目
+## 🌐 相关项目
 
 Open Claudex 聚焦原生 macOS 执行层。下面是 computer use 和 agent desktop 方向的相关项目：
 
@@ -119,7 +139,7 @@ Open Claudex 聚焦原生 macOS 执行层。下面是 computer use 和 agent des
 - [trycua/cua](https://github.com/trycua/cua) - 面向完整桌面 computer-use agent 的 sandbox、SDK 和基础设施。
 - [browser-use/macOS-use](https://github.com/browser-use/macOS-use) - 让 macOS App 对 AI agent 更可访问。
 
-## Star History
+## ⭐ Star History
 
 <a href="https://star-history.com/#OpenClaudex/open-claudex-computer-use&Date">
   <picture>
@@ -129,6 +149,6 @@ Open Claudex 聚焦原生 macOS 执行层。下面是 computer use 和 agent des
   </picture>
 </a>
 
-## License
+## 📄 License
 
 [MIT](LICENSE)

@@ -1,18 +1,38 @@
-# Open Claudex Computer Use
+# 🚀 Open Claudex Computer Use
 
-**English | [简体中文](README.zh-CN.md)**
+<p align="center">
+  <strong>Background computer use for Claude Code, Codex, and MCP agents on macOS.</strong>
+</p>
 
-Open-source background computer use for Claude Code, Codex, and MCP agents on macOS.
+<p align="center">
+  • Open Source Codex-style Computer Use • Native Swift MCP Server • App-Aware Virtual Cursor •
+</p>
 
-[![Release](https://img.shields.io/github/v/release/OpenClaudex/open-claudex-computer-use?include_prereleases&label=release)](https://github.com/OpenClaudex/open-claudex-computer-use/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![macOS](https://img.shields.io/badge/macOS-13%2B-black)](docs/install.md)
-[![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)](Package.swift)
-[![MCP](https://img.shields.io/badge/MCP-stdio-blue)](docs/install.md)
+<p align="center">
+  <a href="README.zh-CN.md">中文文档</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-demos">Demo</a> •
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/releases">Downloads</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-compatibility">Compatibility</a> •
+  <a href="CLAUDE.md">Agent Guide</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/OpenClaudex/open-claudex-computer-use/releases"><img alt="Release" src="https://img.shields.io/github/v/release/OpenClaudex/open-claudex-computer-use?include_prereleases&label=release"></a>
+  <a href="docs/install.md"><img alt="Platform" src="https://img.shields.io/badge/platform-macOS%2013%2B-black"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-green"></a>
+  <a href="Package.swift"><img alt="Swift" src="https://img.shields.io/badge/Swift-5.9%2B-orange"></a>
+  <a href="docs/install.md"><img alt="MCP" src="https://img.shields.io/badge/MCP-stdio-blue"></a>
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-ready-6b46c1">
+  <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-111827">
+  <img alt="Feishu and Lark" src="https://img.shields.io/badge/Feishu%2FLark-best--effort-00a6ff">
+  <img alt="WeChat" src="https://img.shields.io/badge/WeChat-best--effort-07c160">
+</p>
 
 ![Open Claudex Computer Use architecture](docs/assets/openclaudex-architecture.png)
 
-## Quick Navigation
+## 🧭 Quick Navigation
 
 > [!TIP]
 > **I'm a human** -> Continue reading this README for demos, setup, compatibility, and project context.
@@ -29,14 +49,14 @@ Open-source background computer use for Claude Code, Codex, and MCP agents on ma
 
 > Not affiliated with Anthropic, OpenAI, Apple, or the official Codex Computer Use plugin.
 
-## Demos
+## 🎬 Demos
 
 | Native App Control | Background Cross-App Work | Feishu / Lark Best-Effort |
 |---|---|---|
 | ![Native macOS Calculator demo](docs/assets/demo-calculator.gif) | ![Background Safari and Notes demo](docs/assets/demo-background-safari-notes.gif) | ![Sanitized Feishu and Lark demo](docs/assets/demo-feishu-lark.gif) |
 | Click and read native macOS apps through Accessibility, with a visible virtual cursor. | Let the agent work in Safari and Notes while you keep using the Mac. | Operate WebView-heavy enterprise apps with mixed AX and coordinate fallbacks. Sanitized demo data only. |
 
-## Quick Start
+## ⚡ Quick Start
 
 ```bash
 git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
@@ -73,7 +93,7 @@ plugins/claudex-computer-use
 
 Requires macOS 13+, Swift 5.9+, Accessibility permission, and Screen Recording permission. See [Installation & Integration](docs/install.md).
 
-## What It Does
+## ✨ Features
 
 Open Claudex focuses on the native macOS execution layer:
 
@@ -85,7 +105,7 @@ Open Claudex focuses on the native macOS execution layer:
 
 For agent-facing usage rules, tool behavior, and recovery patterns, read [Agent Guide](docs/agent-guide.md).
 
-## Compatibility
+## 🧩 Compatibility
 
 | Tier | Apps | Expected Behavior |
 |---|---|---|
@@ -95,13 +115,13 @@ For agent-facing usage rules, tool behavior, and recovery patterns, read [Agent 
 
 Details: [App Compatibility Matrix](docs/compatibility.md)
 
-## Why This Exists
+## 🧪 Why This Exists
 
 This project started from two converging workflows: Codex-style background computer use and Claude Code-style MCP extensibility. The missing piece was a reusable open-source execution layer: a local macOS MCP server that any agent harness can plug into.
 
 Open Claudex is not a full agent harness. It is the execution engine.
 
-## Docs
+## 📚 Docs
 
 - [Installation & Integration](docs/install.md)
 - [Agent Guide](docs/agent-guide.md)
@@ -111,7 +131,7 @@ Open Claudex is not a full agent harness. It is the execution engine.
 - [Codex Native Trace Kit](docs/codex-native-trace-kit.md)
 - [Roadmap](ROADMAP.md)
 
-## Related Projects
+## 🌐 Related Projects
 
 Open Claudex focuses on the native macOS execution layer. Related projects around computer use and agent desktops:
 
@@ -119,7 +139,7 @@ Open Claudex focuses on the native macOS execution layer. Related projects aroun
 - [trycua/cua](https://github.com/trycua/cua) - sandbox, SDK, and infrastructure for full desktop computer-use agents.
 - [browser-use/macOS-use](https://github.com/browser-use/macOS-use) - making macOS apps accessible to AI agents.
 
-## Star History
+## ⭐ Star History
 
 <a href="https://star-history.com/#OpenClaudex/open-claudex-computer-use&Date">
   <picture>
@@ -129,6 +149,6 @@ Open Claudex focuses on the native macOS execution layer. Related projects aroun
   </picture>
 </a>
 
-## License
+## 📄 License
 
 [MIT](LICENSE)
