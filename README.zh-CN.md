@@ -65,40 +65,11 @@
 
 ## ⚡ 快速开始
 
-```bash
-git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
-cd open-claudex-computer-use
-swift build
-```
+告诉你的 coding agent：
 
-### Claude Code
+> 从 https://github.com/OpenClaudex/open-claudex-computer-use 安装 Open Claudex Computer Use，并把它配置成我的 agent 可用的 MCP server。
 
-```bash
-claude mcp add claudex-computer-use -- "$(pwd)/.build/debug/claudex-computer-use"
-claude mcp list
-```
-
-### Codex App
-
-构建项目后，把这个本地 plugin 目录加入 Codex：
-
-```text
-plugins/claudex-computer-use
-```
-
-### Codex CLI / 通用 MCP
-
-```json
-{
-  "mcpServers": {
-    "claudex-computer-use": {
-      "command": "/absolute/path/to/open-claudex-computer-use/.build/debug/claudex-computer-use"
-    }
-  }
-}
-```
-
-要求 macOS 13+、Swift 5.9+、Accessibility 权限和 Screen Recording 权限。完整说明见：[安装和集成](docs/install.md)。
+要求 macOS 13+、Swift 5.9+、Accessibility 权限和 Screen Recording 权限。手动安装见：[安装和集成](docs/install.md)。
 
 ## ✨ 功能
 

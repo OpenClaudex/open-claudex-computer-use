@@ -65,40 +65,11 @@
 
 ## ⚡ Quick Start
 
-```bash
-git clone https://github.com/OpenClaudex/open-claudex-computer-use.git
-cd open-claudex-computer-use
-swift build
-```
+Tell your coding agent:
 
-### Claude Code
+> Install Open Claudex Computer Use from https://github.com/OpenClaudex/open-claudex-computer-use and configure it as an MCP server for my agent.
 
-```bash
-claude mcp add claudex-computer-use -- "$(pwd)/.build/debug/claudex-computer-use"
-claude mcp list
-```
-
-### Codex App
-
-Build the project, then add this local plugin directory to Codex:
-
-```text
-plugins/claudex-computer-use
-```
-
-### Codex CLI / Generic MCP
-
-```json
-{
-  "mcpServers": {
-    "claudex-computer-use": {
-      "command": "/absolute/path/to/open-claudex-computer-use/.build/debug/claudex-computer-use"
-    }
-  }
-}
-```
-
-Requires macOS 13+, Swift 5.9+, Accessibility permission, and Screen Recording permission. See [Installation & Integration](docs/install.md).
+Requires macOS 13+, Swift 5.9+, Accessibility permission, and Screen Recording permission. For manual setup, see [Installation & Integration](docs/install.md).
 
 ## ✨ Features
 
