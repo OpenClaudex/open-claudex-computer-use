@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="README.md">English</a> •
+  <a href="#-新闻栏">新闻栏</a> •
   <a href="#-功能">功能</a> •
   <a href="#-demos">Demo</a> •
   <a href="https://github.com/OpenClaudex/open-claudex-computer-use/releases">下载</a> •
@@ -38,6 +39,14 @@
 > **🔓 为什么开源。** 官方 Codex Computer Use MCP 没有开源。Open Claudex 要做的是一个可复用的 macOS execution layer，让 Claude Code、Codex 和其他 MCP harness 都能接入。
 
 ![Open Claudex Computer Use 架构图](docs/assets/openclaudex-architecture.png)
+
+## 🗞️ 新闻栏
+
+> 🚀 **正式发布：** Open Claudex Computer Use 公开了：面向 Claude Code、Codex 和 MCP agent 的开源 macOS 后台 computer-use 执行层。
+>
+> 🦞 **昨天（2026-05-11），OpenClaw 也加入了 computer-use 浪潮：** OpenClaw 生态也有了 [Computer Use skill](https://openclawai.io/skills/skill/computer-use/)。这说明“操作真实 App”正在从 demo 变成 agent 的基础能力。
+>
+> 🪽 **今天（2026-05-12），Hermes Agent 也推出了 macOS Computer Use：** [Hermes Agent Computer Use](https://hermes-agent.nousresearch.com/docs/user-guide/features/computer-use) 指向同一个方向：agent 需要自己的后台车道，而不是抢人的鼠标。✨
 
 ## 🧭 快速导航
 

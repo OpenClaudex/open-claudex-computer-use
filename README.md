@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="README.zh-CN.md">中文文档</a> •
+  <a href="#-news">News</a> •
   <a href="#-features">Features</a> •
   <a href="#-demos">Demo</a> •
   <a href="https://github.com/OpenClaudex/open-claudex-computer-use/releases">Downloads</a> •
@@ -38,6 +39,14 @@
 > **🔓 Why open source it?** The official Codex Computer Use MCP is not open source. Open Claudex is an open macOS execution layer for Claude Code, Codex, and other MCP harnesses.
 
 ![Open Claudex Computer Use architecture](docs/assets/openclaudex-architecture.png)
+
+## 🗞️ News
+
+> 🚀 **Launch day:** Open Claudex Computer Use is public: an open-source macOS background computer-use layer for Claude Code, Codex, and MCP agents.
+>
+> 🦞 **Yesterday (2026-05-11), OpenClaw joined the computer-use wave:** the OpenClaw ecosystem now has a [Computer Use skill](https://openclawai.io/skills/skill/computer-use/) too. Real-app operation is quickly becoming a standard agent primitive.
+>
+> 🪽 **Today (2026-05-12), Hermes Agent added macOS Computer Use:** [Hermes Agent Computer Use](https://hermes-agent.nousresearch.com/docs/user-guide/features/computer-use) points in the same direction: agents need their own background lane, not your cursor. ✨
 
 ## 🧭 Quick Navigation
 
