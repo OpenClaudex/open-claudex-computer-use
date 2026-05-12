@@ -40,13 +40,11 @@
 
 ![Open Claudex Computer Use architecture](docs/assets/openclaudex-architecture.png)
 
-## 🗞️ News
+## 📮 News
 
-> 🚀 **Launch day:** Open Claudex Computer Use is public: an open-source macOS background computer-use layer for Claude Code, Codex, and MCP agents.
->
-> 🦞 **Yesterday (2026-05-11), OpenClaw joined the computer-use wave:** the OpenClaw ecosystem now has a [Computer Use skill](https://openclawai.io/skills/skill/computer-use/) too. Real-app operation is quickly becoming a standard agent primitive.
->
-> 🪽 **Today (2026-05-12), Hermes Agent added macOS Computer Use:** [Hermes Agent Computer Use](https://hermes-agent.nousresearch.com/docs/user-guide/features/computer-use) points in the same direction: agents need their own background lane, not your cursor. ✨
+- **[2026.05.12]** 🪽 [Hermes Agent Computer Use](https://hermes-agent.nousresearch.com/docs/user-guide/features/computer-use) is here too. The direction is getting clearer: agents need their own background lane, not your cursor. ✨
+- **[2026.05.11]** 🦞 OpenClaw joined the computer-use wave with a [Computer Use skill](https://openclawai.io/skills/skill/computer-use/). Real-app operation is becoming a standard agent primitive.
+- **[Launch day]** 🚀 Open Claudex Computer Use is public: an open-source macOS background computer-use layer for Claude Code, Codex, and MCP agents.
 
 ## 🧭 Quick Navigation
 
